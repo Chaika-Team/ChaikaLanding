@@ -20,7 +20,7 @@ const Footer = () => {
           <h3 className="text-md font-semibold mb-4 text-white">Контактная информация</h3>
           <ul className="space-y-2">
             <li>Email: <a href="mailto:info@chaika.com" className="hover:text-white">info@chaika.com</a></li>
-            <li>Телефон: <a href="tel:+79998887766" className="hover:text-white">+7 (999) 888-77-66</a></li>
+            <li>Телефон: <a href="tel:+79643374685" className="hover:text-white">+7 (964) 337-46-85</a></li>
           </ul>
         </div>
       </div>
