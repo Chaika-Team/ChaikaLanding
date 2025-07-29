@@ -3,7 +3,7 @@ name: Build and Deploy ChaikaLanding image
 on:
   push:
     branches:
-      - master
+      - main
       - CHL-*
       - CHOPS-*
       - fix/*
@@ -35,7 +35,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 2
 
       - name: Check if version was modified
         id: check-version
@@ -50,7 +50,7 @@ jobs:
     name: Push new image into registry
     runs-on: ubuntu-latest
     needs: version
-    if: ${{ github.event.workflow_run.conclusion == 'success' && needs.checkout.outputs.version_modified == 'true' && github.ref == 'refs/heads/master' }}
+    if: ${{ needs.version.outputs.version_modified == 'true' && github.ref == 'refs/heads/main' }}
     steps:
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
