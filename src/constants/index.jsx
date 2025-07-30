@@ -92,7 +92,7 @@ export const testimonials = [
   },
   {
     user: "Дмитрий",
-    company: "Девопс",
+    company: "DevOps",
     image: member4,
     text: "Отвечает за запуск и корректность работы приложения",
   },
