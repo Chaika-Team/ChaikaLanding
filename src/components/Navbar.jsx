@@ -48,10 +48,10 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-6 flex flex-col justify-center items-center text-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4">
+                <li key={index} className="py-3">
                   <a href={item.href}
                     className="text-white hover:text-orange-500 transition-colors duration-200"
                     >{item.label}
@@ -59,7 +59,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 pt-4">
               <a href="#footer" className="py-2 px-3 border rounded-md">
                 Контакты
               </a>
