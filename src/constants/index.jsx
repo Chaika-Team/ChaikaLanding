@@ -17,7 +17,7 @@ import member5 from "../assets/member5.jpg";
 export const navItems = [
   { label: "Функционал", href: "#app" },
   { label: "Наши предложения", href: "#features" },
-  { label: "Наш персонал", href: "#team" },
+  { label: "Команда", href: "#team" },
 ];
 
 export const features = [
@@ -74,9 +74,9 @@ export const features = [
 export const testimonials = [
   {
     user: "Эрнест",
-    company: "Основатель \"Чайки\"",
+    company: "Генеральный директор",
     image: member1,
-    text: "Создатель и разработчик приложения \"Чайка\"",
+    text: "Основатель проекта \"Чайка\". Мобильный разработчик",
   },
   {
     user: "Григорий",
@@ -88,19 +88,19 @@ export const testimonials = [
     user: "Никита",
     company: "Руководитель команды",
     image: member3,
-    text: "Руководствует процессом создания ПО \"Чайка\"",
+    text: "Технический директор, руководитель командной разработки",
   },
   {
     user: "Дмитрий",
     company: "DevOps",
     image: member4,
-    text: "Отвечает за запуск и корректность работы приложения",
+    text: "Cпециалист по автоматизации процессов разработки и развертывания ПО",
   },
   {
     user: "Никита",
     company: "Kotlin Разработчик",
     image: member5,
-    text: "Разработчик приложения \"Чайка\"",
+    text: "Мобильный разработчик",
   },
 ];
 
