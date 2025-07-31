@@ -22,7 +22,7 @@ export default {
         },
       },
       animation: {
-        "infinite-scroll": "infinite-scroll linear infinite",
+        "infinite-scroll": "infinite-scroll 10s linear infinite",
         "slide-in-top": "slide-in-top 2s ease-out forwards",
         "slide-in-bottom": "slide-in-bottom 2s ease-out forwards",
         "fade-in": "fade-in 2s ease-out forwards",
