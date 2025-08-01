@@ -8,6 +8,30 @@ const Hero = () => {
   const speed = 200;
 
   useEffect(() => {
+  const setVH = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  };
+  setVH();
+
+  window.addEventListener("orientationchange", setVH);
+
+  let lastW = window.innerWidth;
+  const onResize = () => {
+    if (window.innerWidth !== lastW) {
+      lastW = window.innerWidth;
+      setVH();
+    }
+  };
+  window.addEventListener("resize", onResize);
+
+  return () => {
+    window.removeEventListener("orientationchange", setVH);
+    window.removeEventListener("resize", onResize);
+  };
+}, []);
+
+  useEffect(() => {
     const strip = stripRef.current;
     if (!strip) return;
 
@@ -31,8 +55,8 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative flex flex-col items-center justify-center border-b border-neutral-800"
-      style={{ height: "calc(100vh - 9rem)" }}
+      className="relative flex flex-col items-center justify-center border-b border-neutral-800 "
+      style={{ height: `calc(var(--vh)*100 - 9rem)` }}
     >
       <h1 className="animate-[slide-in-top_0.5s_ease-out_forwards] text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Чайка
