@@ -41,7 +41,6 @@ const Hero = () => {
           animate-[fade-in_1.5s_ease-out_1.5s_forwards]
           flex w-full
           overflow-hidden
-          [will-change:transform]
           [backface-visibility:hidden]
           [mask-image:linear-gradient(to_right,transparent_0,black_128px,black_calc(100%_-_128px),transparent_100%)]
           [-webkit-mask-image:linear-gradient(to_right,transparent_0,black_128px,black_calc(100%_-_128px),transparent_100%)]
@@ -55,6 +54,8 @@ const Hero = () => {
             shrink-0 
             w-[calc(2*var(--count)*(176px+0px))]
             animate-infinite-scroll
+            [will-change:transform]
+            [transform:translateZ(0)]
           "
         >
           {[...trainArray, ...trainArray].map((src, idx) => (
