@@ -1,9 +1,8 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
+import { Package } from "lucide-react";
 import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { Sheet } from "lucide-react";
+import { Workflow } from "lucide-react";
 import { Monitor } from "lucide-react"
 import { WifiOff } from "lucide-react";
 import { ChartNoAxesCombined } from "lucide-react";
@@ -40,19 +39,19 @@ export const features = [
       "Информация обо всех произведённых операциях на одном экране, а так же подсчёт чеков безналичной оплаты.",
   },
   {
-    icon: <BatteryCharging />,
+    icon: <Package />,
     text: "Управление остатками",
     description:
       "Регистрация доборов со штабного вагона, быстрый доступ к текущим остаткам товаров.",
   },
   {
-    icon: <PlugZap />,
+    icon: <Sheet />,
     text: "Сводная таблица и выручка",
     description:
       "Таблица учёта товаров, а также выручка за поездку формируются автоматически.",
   },
   {
-    icon: <GlobeLock />,
+    icon: <Workflow />,
     text: "Автоматизация отчётов",
     description:
       "По завершении поездки формируется отчёт, отправляющийся на сервер для последующей аналитики",
