@@ -56,7 +56,10 @@ const Hero = () => {
     <div
       id="home"
       className="relative flex flex-col items-center justify-center border-b border-neutral-800 "
-      style={{ height: `calc(var(--vh)*100 - 9rem)` }}
+      style={{
+        height: `calc(var(--vh)*100 - 9rem)`,
+        minHeight: "calc(640px - 9rem)",
+       }}
     >
       <h1 className="animate-[slide-in-top_0.5s_ease-out_forwards] text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Чайка
